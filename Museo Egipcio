@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Virtual de Egipto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🏛 Museo Virtual del Antiguo Egipto 🏛</h1>
+    <div class="salas">
+        <a href="artefactos.html" class="boton">🗿 Sala de Artefactos</a>
+        <a href="escritura.html" class="boton">📜 Sala de Escritura</a>
+        <a href="arquitectura.html" class="boton">🏗️ Sala de Arquitectura</a>
+        <a href="cultura.html" class="boton">👗 Sala de Cultura</a>
+        <a href="juegos.html" class="boton">🎲 Sala de Juegos</a>
+    </div>
+</body>
+</html>
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4e3c1;
+    color: #8b6f47;
+}
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.salas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.boton {
+    display: block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    background-color: #8b6f47;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton:hover {
+    background-color: #a0805a;
+}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Artefactos</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-sky color="#f4e3c1"></a-sky>
+        <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#8b6f47"></a-plane>
+        <a-box position="-2 0.5 -3" color="gold"></a-box> <!-- Máscara de Tutankamón -->
+        <a-cylinder position="2 0.5 -3" radius="0.5" height="1.5" color="gray"></a-cylinder> <!-- Piedra Rosetta -->
+        <a-text value="Sala de Artefactos" position="-1 2 -3" color="black"></a-text>
+    </a-scene>
+</body>
+</html>
